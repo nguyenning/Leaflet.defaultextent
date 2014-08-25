@@ -1,0 +1,29 @@
+{
+  "name": "Leaflet.defaultextent",
+  "version": "0.0.0",
+  "description": "Leaflet Default Extent button",
+  "main": "src/leaflet.defaultextent.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nguyenning/Leaflet.defaultextent.git"
+  },
+  "keywords": [
+    "leaflet",
+    "extent"
+  ],
+  "author": "Alex Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nguyenning/Leaflet.defaultextent/issues"
+  },
+  "homepage": "https://github.com/nguyenning/Leaflet.defaultextent",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "browserify": "^5.10.1",
+    "watchify": "^1.0.2",
+    "vinyl-source-stream": "^0.1.1"
+  }
+}
