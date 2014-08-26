@@ -1,8 +1,8 @@
 {
   "name": "Leaflet.defaultextent",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Leaflet Default Extent button",
-  "main": "src/leaflet.defaultextent.js",
+  "main": "dist/leaflet.defaultextent.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +22,6 @@
   "homepage": "https://github.com/nguyenning/Leaflet.defaultextent",
   "devDependencies": {
     "gulp": "^3.8.7",
-    "gulp-wrap-umd": "^0.2.1"    
+    "gulp-wrap-umd": "^0.2.1"
   }
 }

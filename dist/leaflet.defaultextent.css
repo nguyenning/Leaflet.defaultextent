@@ -1,0 +1,12 @@
+.leaflet-control-defaultextent {
+
+}
+
+.leaflet-control-defaultextent-toggle {
+  text-indent: -9999px;
+  white-space: nowrap;
+  background-image: url('leaflet.defaultextent.png');
+  width: 26px;
+  height: 26px;
+  display: block;
+}
