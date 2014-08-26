@@ -8,6 +8,7 @@ Adds a Default Extent button on a Leaflet map.
 There are several ways to add the button to the map
 
 1. Add on initialize
+
   ```javascript
     var map = L.map('map', {
       center: mapCenter,
@@ -16,6 +17,7 @@ There are several ways to add the button to the map
     });
   ```
 1. Direct
+
   ```javascript
   L.control.defaultExtent()
     .addTo(map);
