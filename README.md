@@ -1,7 +1,7 @@
 Leaflet.defaultextent
 =====================
 
-Adds a Default Extent button on a Leaflet map.
+Adds a Default Extent button that returns to the original start extent of the map when clicked. Similar to the [HomeButton](https://developers.arcgis.com/javascript/jssamples/widget_home.html) widget.
 
 ## Using the plugin
 
