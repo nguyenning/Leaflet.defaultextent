@@ -1,5 +1,15 @@
-(function () {
-  'use strict';
+
+(function(root, factory) {
+  if (typeof define === 'function' && define.amd) {
+    define(["leaflet"], factory);
+  } else if (typeof exports === 'object') {
+    module.exports = factory(require('leaflet'));
+  } else {
+    root.L.Control.DefaultExtent = factory(root.L);
+  }
+}(this, function(L) {
+
+return (function () {
   L.Control.DefaultExtent = L.Control.extend({
     options: {
       text: 'Default Extent',
@@ -43,3 +53,6 @@
   return L.Control.DefaultExtent;
 
 }());
+;
+
+}));

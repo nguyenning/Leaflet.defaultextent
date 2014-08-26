@@ -1,27 +1,24 @@
 var gulp = require('gulp');
-var source = require('vinyl-source-stream');
-var watchify = require('watchify');
-var browserify = require('browserify');
+
+var wrap = require('gulp-wrap-umd');
 
 var isWatching = false;
 
-gulp.task('browserify', function () {
-  var bundleMethod = isWatching ? watchify : browserify;
-  var bundler = bundleMethod({
-    // Specify the entry point of your app
-    entries: ['./src/leaflet.defaultextent'],
-    debug: isWatching
-  });
-
-  var bundle = function () {
-    return bundler
-      .bundle()
-      .pipe(source('dist/leaflet.defaultextent.js'));
+gulp.task('wrap', function () {
+  var wrapOptions = {
+    namespace: 'L.Control.DefaultExtent',
+    deps: [
+      {
+        name: 'leaflet',
+        globalName: 'L',
+        paramName: 'L'
+      }
+    ]
   };
-  if (isWatching) {
-    bundler.on('update', bundle);
-  }
-  return bundle();
+  gulp
+    .src(['src/*.js'])
+    .pipe(wrap(wrapOptions))
+    .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('default', ['browserify']);
+gulp.task('default', ['wrap']);
