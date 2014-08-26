@@ -35,4 +35,4 @@ There are several ways to add the button to the map
 | Method | Returns | Description
 | --- | --- | ---
 | `setCenter(`[LatLng](http://leafletjs.com/reference.html#latlng) *center*`)` | `this` | Sets the default center to new LatLng
-| `setZoom(` `<Number>` zoom `)` | `this` | Represents a geographical point with a certain latitude and longitude.
+| `setZoom(` `<Number>` *zoom* `)` | `this` | Represents a geographical point with a certain latitude and longitude.
