@@ -1,6 +1,6 @@
 var gulp = require('gulp');
-
 var wrap = require('gulp-wrap-umd');
+var jshint = require('gulp-jshint');
 
 var isWatching = false;
 
@@ -21,4 +21,11 @@ gulp.task('wrap', function () {
     .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('default', ['wrap']);
+gulp.task('jshint', function () {
+  return gulp
+    .src('src/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
+});
+
+gulp.task('default', ['jshint', 'wrap']);

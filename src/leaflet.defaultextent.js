@@ -21,7 +21,8 @@
       return this;
     },
     _initLayout: function () {
-      var container = L.DomUtil.create('div', 'leaflet-bar ' + this.options.className);
+      var container = L.DomUtil.create('div', 'leaflet-bar ' +
+        this.options.className);
       this._container = container;
       this._fullExtentButton = this._createExtentButton(container);
 
@@ -32,7 +33,8 @@
       return this._container;
     },
     _createExtentButton: function () {
-      var link = L.DomUtil.create('a', this.options.className + '-toggle', this._container);
+      var link = L.DomUtil.create('a', this.options.className + '-toggle',
+        this._container);
       link.href = '#';
       link.innerHTML = this.options.text;
       link.title = this.options.title;
