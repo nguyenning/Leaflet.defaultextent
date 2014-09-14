@@ -1,6 +1,6 @@
 {
   "name": "leaflet.defaultextent",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Leaflet Default Extent button",
   "main": "dist/leaflet.defaultextent.js",
   "scripts": {
