@@ -12,7 +12,7 @@ var map = L.map('map', {
 // Another way to add to map
 // L.control.defaultExtent().addTo(map);
 
-L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 18,
   id: 'examples.map-i86knfo3'
 }).addTo(map);
